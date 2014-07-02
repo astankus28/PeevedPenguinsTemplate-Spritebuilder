@@ -45,4 +45,9 @@
     [_levelNode addChild:level];
 }
 
+- (void)retry {
+    // reload this level
+    [[CCDirector sharedDirector] replaceScene: [CCBReader loadAsScene:@"Gameplay"]];
+}
+
 @end
